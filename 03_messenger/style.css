@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "Pretendard-Regular", sans-serif;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.logo {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: auto;
+}
+
+.messenger-container {
+    background: url("./assets/background.jpg") no-repeat center center / cover;
+    width: 100vw;
+    height: 100dvh;
+}
+
+.login-container {
+    display: none;
+}
+
+.login-container.active {
+    display: block;
+}
+
+.login-input {
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    width: 250px;
+    transition: all 0.2s;
+    outline: none;
+    font-weight: bold;
+}
+
+.login-input:focus,
+.login-input:active {
+    width: 300px;
+}
+
+.login-input:-webkit-autofill {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+.login-input::placeholder {
+    color: #fff;
+    font-weight: bold;
+}
+
+.login-input-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 1px solid #222;
+}
+
+.login-input-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background: url("./assets/enter.png") no-repeat center center / 20px 20px;
+    border: none;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.login-input-button:hover {
+    background-size: 25px 25px;
+}
+
+.chat-container {
+    display: none;
+}
+
+.chat-container.active {
+    display: block;
+}
+
+.chat-inner {
+    padding: 0 20px;
+    box-sizing: border-box;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.chat-message-container {
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+.chat-message-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: calc(100dvh - 150px);
+    overflow-y: auto;
+}
+
+.chat-message-item {
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    position: relative;
+    width: 250px;
+    margin: 20px 0 50px 0;
+    padding: 15px;
+}
+
+.chat-message-item.right {
+    margin-left: auto;
+    background-color: #fff;
+}
+
+.chat-message-nickname {
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    padding: 2px 15px;
+    border-radius: 50px;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.chat-message-text {
+    word-break: break-all;
+    margin: 0;
+    color: #fff;
+}
+.right .chat-message-text {
+    color: #222;
+}
+
+.chat-message-date {
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.chat-message-send-container {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    max-width: 960px;
+    width: 100%;
+    border-bottom: 1px solid #02c7bb;
+}
+
+.chat-message-send-input {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 10px 40px 10px 10px;
+    box-sizing: border-box;
+}
+
+.chat-message-send-input::placeholder {
+    color: #fff;
+}
+
+.chat-message-send-input:-webkit-autofill {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+.chat-message-send-button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    background: url("./assets/send.png") no-repeat center center / 20px 20px;
+    border: none;
+    padding: 0;
+}

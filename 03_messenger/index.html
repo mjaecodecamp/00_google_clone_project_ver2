@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Messenger Project">
+    <meta name="author" content="minjee kim">
+    <meta name="kewords" content="Messenger, project">
+    <meta name="generator" content="Web Storm">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Messenger project">
+    <meta property="og:url" content="http://messenger.mjaecodecamp.xyz">
+    <meta property="og:site_name" content="Carousel Project">
+    <meta property="og:description" content="바닐라코딩: 메신저 프로젝트">
+    <meta property="og:image" content="./assets/og-image.jpg">
+    <title>Messenger Project</title>
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" href="./assets/logo192.png">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script defer type="module" src="./js/script.js"></script>
+</head>
+<body>
+
+<div class="messenger-container">
+    <img src="./assets/vaco.png" class="logo" alt="logo" />
+    <div class="login-container active">
+        <form class="login-input-container" id="loginForm">
+            <label for="login" class="blind">닉네임을 입력해주세요.</label>
+            <div class="login-input-wrap">
+                <input
+                    type="text"
+                    class="login-input"
+                    id="login"
+                    placeholder="닉네임을 입력해주세요."
+                />
+            </div>
+            <button type="button" class="login-input-button">
+                <span class="blind">입력</span>
+            </button>
+        </form>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-inner">
+            <div class="chat-message-container">
+                <ul class="chat-message-list" id="messageContainer">
+                </ul>
+            </div>
+            <div class="chat-message-send-container">
+                <form id="messageForm">
+                    <label for="sendMessage" class="blind">메시지</label>
+                    <input
+                        type="text"
+                        id="sendMessage"
+                        class="chat-message-send-input"
+                        placeholder="메시지를 입력해주세요."
+                    />
+                    <button
+                        type="button"
+                        class="chat-message-send-button"
+                    >
+                        <span class="blind">메시지 발송하기</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
