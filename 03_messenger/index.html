@@ -32,6 +32,7 @@
                     class="login-input"
                     id="login"
                     placeholder="닉네임을 입력해주세요."
+                    autocomplete="off"
                 />
             </div>
             <button type="submit" class="login-input-button">
@@ -47,13 +48,14 @@
                 </ul>
             </div>
             <div class="chat-message-send-container">
-                <form id="messageForm">
+                <form class="chat-message-form" id="messageForm">
                     <label for="sendMessage" class="blind">메시지</label>
                     <input
                         type="text"
                         id="sendMessage"
                         class="chat-message-send-input"
                         placeholder="메시지를 입력해주세요."
+                        autocomplete="off"
                     />
                     <button
                         type="submit"
