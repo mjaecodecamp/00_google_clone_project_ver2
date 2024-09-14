@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carousel Project">
+    <meta name="author" content="minjee kim">
+    <meta name="kewords" content="carousel, project">
+    <meta name="generator" content="Web Storm">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="google clone project">
+    <meta property="og:url" content="http://carousel.mjaecodecamp.xyz">
+    <meta property="og:site_name" content="Carousel Project">
+    <meta property="og:description" content="바닐라코딩: 캐러셀 프로젝트">
+    <meta property="og:image" content="./assets/og-image.jpg">
+    <title>Carousel Project</title>
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" href="./assets/logo192.png">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="slider-container">
+        <ul class="slider-list">
+            <li class="slider-item active">
+                <img src="./assets/slide01.jpg" alt="슬라이드1">
+            </li>
+            <li class="slider-item">
+                <img src="./assets/slide02.jpg" alt="슬라이드2">
+            </li>
+            <li class="slider-item">
+                <img src="./assets/slide03.jpg" alt="슬라이드3">
+            </li>
+            <li class="slider-item">
+                <img src="./assets/slide04.jpg" alt="슬라이드4">
+            </li>
+            <li class="slider-item">
+                <img src="./assets/slide05.jpg" alt="슬라이드5">
+            </li>
+        </ul>
+        <button type="button" class="slider-button left" onclick="handlePrev()">
+            <span class="blind">왼쪽</span>
+        </button>
+        <button type="button" class="slider-button right" onclick="handleNext()">
+            <span class="blind">오른쪽</span>
+        </button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
